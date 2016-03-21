@@ -6,6 +6,12 @@ sudo apt-get upgrade
 sudo apt-get install yasm
 sudo apt-get install nasm
 
+# added 2016-03-07 when my version of scipy was out of date
+sudo apt-get install libatlas-base-dev gfortran python-pip --upgrade
+sudo pip install --upgrade scipy
+
+sudo pip install ipyparallel
+
 # I'm not sure whether moviepy is essential (added 2015-06-25)
 cd ~/code
 sudo pip install moviepy
@@ -22,11 +28,22 @@ sudo pip install av
 	# this gets installed to 
  	# /usr/local/lib/python2.7/dist-packages
 
+## upgrade all pip packages
+# sudo pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
+
 # just for fun
 sudo apt-get install fortune
 
 ## maybe useful?
 # ~/code/libav-11.4/configure
 
+# added 2016-02-17 when the existing code wasn't sufficient, but this wasn't sufficient either.
+# cd ~/code
 # git clone https://github.com/mikeboers/PyAV.git
 # cd PyAV
+# virtualenv venv
+# . venv/bin/activate
+# python setup.py build_ext --inplace
+
+
+
