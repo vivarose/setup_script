@@ -18,7 +18,7 @@ sudo pip install ipyparallel		# added 2016-03-21
 sudo pip install pandas==0.14.1		# this version works with my trackpy
 
 # I'm not sure whether moviepy is essential (added 2015-06-25)
-cd ~/code
+# cd ~/code
 sudo pip install moviepy
 # Cython added 2015-07-01 in case it helps install PyAv
 sudo pip install Cython
