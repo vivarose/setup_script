@@ -10,7 +10,12 @@ sudo apt-get install nasm
 sudo apt-get install libatlas-base-dev gfortran python-pip --upgrade
 sudo pip install --upgrade scipy
 
-sudo pip install ipyparallel
+sudo pip install ipyparallel		# added 2016-03-21
+
+# Added 2016-03-21 because pandas version 0.13 
+# couldn't use my code for subtracting dataframes
+# sudo pip install --upgrade pandas
+sudo pip install pandas==0.14.1		# this version works with my trackpy
 
 # I'm not sure whether moviepy is essential (added 2015-06-25)
 cd ~/code
