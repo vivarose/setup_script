@@ -18,6 +18,7 @@ sudo pip install Cython
 # sudo pip install --upgrade notebook	# added 2016-03-24
 # sudo pip install jupyter	# added 2016-03-24
 # sudo pip install --upgrade tornado==4.0	# added 2016-03-24
+pip install --upgrade tornado --user
 # sudo pip install --upgrade gen		# added 2016-03-24
 
 ## upgrade all pip packages
